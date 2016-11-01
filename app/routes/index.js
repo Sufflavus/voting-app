@@ -6,18 +6,28 @@ var ClickHandler = require(path + '/app/controllers/clickHandler.server.js');
 module.exports = function (app, passport) {
 
 	function isLoggedIn (req, res, next) {
-		//if (req.isAuthenticated()) {
+		if (req.isAuthenticated()) {
 			return next();
-		//} else {
-		//	res.redirect('/login');
-		//}
+		} else {
+			res.redirect('/login');
+		}
 	}
 
 	var clickHandler = new ClickHandler();
 
-	app.route('/')
+	/*app.route('/')
 		.get(isLoggedIn, function (req, res) {
 			res.sendFile(path + '/public/index.html');
+		});*/
+		
+	app.route('/')
+		.get(function (req, res) {
+			res.sendFile(path + '/public/index.html');
+		});
+		
+	app.route('/all')
+		.get(function (req, res) {
+			res.sendFile(path + '/public/all.html');
 		});
 
 	app.route('/login')

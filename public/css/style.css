@@ -27,3 +27,7 @@ footer.page-footer {
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+.card-panel .row {
+    margin-bottom: 0;
+}
