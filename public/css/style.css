@@ -31,3 +31,8 @@ footer.page-footer {
 .card-panel .row {
     margin-bottom: 0;
 }
+
+.card-panel:hover {
+    background-color: #81d4fa;
+    cursor: pointer;
+}
