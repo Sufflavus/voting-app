@@ -8,7 +8,7 @@
   <!-- CSS  -->
   <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-  <link href="/public/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/public/css/materialize-override.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
   <nav class="light-blue lighten-1" role="navigation">
@@ -37,8 +37,24 @@
     </div>
   
   
-   <div class="container">
-      
+    <div class="container">
+      <h5>Question</h5>
+      <ul class="collection">
+        <li class="collection-item">
+          <input class="with-gap" name="options" type="radio" checked />
+          <label for="test5">Option 1</label>
+        </li>
+        <li class="collection-item">
+          <input class="with-gap" name="options" type="radio" />
+          <label for="test5">Option 2</label>
+        </li>
+        <li class="collection-item">
+          <input class="with-gap" name="options" type="radio" />
+          <label for="test5">Option 3</label>
+        </li>
+      </ul>
+      <a class="btn btn-large waves-effect waves-light orange">Vote</a>
+    </div>
   </main>
 
   <footer class="page-footer orange">
