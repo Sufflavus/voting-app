@@ -29,6 +29,11 @@ module.exports = function (app, passport) {
 		.get(function (req, res) {
 			res.sendFile(path + '/public/all.html');
 		});
+		
+	app.route('/vote_show/:id')
+		.get(function (req, res) {
+			res.sendFile(path + '/public/vote_show.html');
+		});
 
 	app.route('/login')
 		.get(function (req, res) {
