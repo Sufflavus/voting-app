@@ -1,10 +1,11 @@
 .stripes-bar{
-	height: 20px;
-	background: repeating-linear-gradient(
-	  -55deg,
-	  #606dbc,
-	  #606dbc 20px,
-	  #ff9800 20px,
-	  #ff9800 40px
+	height: 15px;
+	background: repeating-linear-gradient(    
+		-45deg,    
+		#00b0ff,    
+		#00b0ff 25px,    
+		#bdbdbd 25px,    
+		#bdbdbd 50px  
 	);
+	margin-bottom: 20px;
 }
