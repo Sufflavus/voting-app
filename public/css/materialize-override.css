@@ -38,55 +38,34 @@ footer.page-footer {
 }
 
 /* label color */
-/*.input-field label {
+.input-field label {
  color: #29b6f6;
-}*/
+}
 
 /* label focus color */
-/*.input-field input[type=text]:focus + label {
+.input-field input[type=text]:focus + label {
  color: #29b6f6;
-}*/
+}
 
 /* label underline focus color */
-/*.input-field input[type=text]:focus {
+.input-field input[type=text]:focus {
  border-bottom: 1px solid #29b6f6;
  box-shadow: 0 1px 0 0 #29b6f6;
-}*/
+}
 
 /* valid color */
-/*.input-field input[type=text].valid {
+.input-field input[type=text].valid {
  border-bottom: 1px solid #29b6f6;
  box-shadow: 0 1px 0 0 #29b6f6;
-}*/
+}
 
 /* invalid color */
-/*.input-field input[type=text].invalid {
+.input-field input[type=text].invalid {
  border-bottom: 1px solid #d32f2f;
  box-shadow: 0 1px 0 0 #d32f2f;
-}*/
+}
 
 /* icon prefix focus color */
-/*.input-field .prefix.active {
+.input-field .prefix.active {
  color: #29b6f6;
 }
-
-.input-field input[type=text] {
-    box-sizing: border-box;
-    padding-right: 30px;
-}
-
-.trash {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.input-field:hover .trash {
-    opacity: 0.3;
-}
-
-.input-field:hover .trash:hover {
-    opacity: 1;
-}*/

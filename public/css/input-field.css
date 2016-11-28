@@ -1,36 +1,3 @@
-/* label color */
-.input-field__label {
- color: #29b6f6;
-}
-
-/* label focus color */
-.input-field__text:focus + input-field__label {
- color: #29b6f6;
-}
-
-/* label underline focus color */
-.input-field__text:focus {
- border-bottom: 1px solid #29b6f6;
- box-shadow: 0 1px 0 0 #29b6f6;
-}
-
-/* valid color */
-.input-field__text_valid {
- border-bottom: 1px solid #29b6f6;
- box-shadow: 0 1px 0 0 #29b6f6;
-}
-
-/* invalid color */
-.input-field__text_invalid {
- border-bottom: 1px solid #d32f2f;
- box-shadow: 0 1px 0 0 #d32f2f;
-}
-
-/* icon prefix focus color */
-.input-field__prefix_active {
- color: #29b6f6;
-}
-
 .input-field__text {
     box-sizing: border-box;
     padding-right: 30px;
