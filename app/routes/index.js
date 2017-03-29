@@ -55,6 +55,11 @@ module.exports = function (app, passport) {
 			req.logout();
 			res.redirect('/login');
 		});
+		
+	app.route('/signin')
+		.get(function (req, res) {
+			res.sendFile(path + '/public/signin.html');
+		});
 
 	app.route('/profile')
 		.get(isLoggedIn, function (req, res) {

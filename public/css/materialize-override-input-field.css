@@ -12,24 +12,32 @@
 }
 
 /* label focus color */
-.input-field input[type=text]:focus + label {
+.input-field input[type=text]:focus + label,
+.input-field input[type=password]:focus + label,
+.input-field input[type=email]:focus + label {
  color: #29b6f6;
 }
 
 /* label underline focus color */
-.input-field input[type=text]:focus {
+.input-field input[type=text]:focus,
+.input-field input[type=password]:focus,
+.input-field input[type=email]:focus {
  border-bottom: 1px solid #29b6f6;
  box-shadow: 0 1px 0 0 #29b6f6;
 }
 
 /* valid color */
-.input-field input[type=text].valid {
+.input-field input[type=text].valid,
+.input-field input[type=password].valid,
+.input-field input[type=email].valid {
  border-bottom: 1px solid #29b6f6;
  box-shadow: 0 1px 0 0 #29b6f6;
 }
 
 /* invalid color */
-.input-field input[type=text].invalid {
+.input-field input[type=text].invalid,
+.input-field input[type=password].invalid,
+.input-field input[type=email].invalid {
  border-bottom: 1px solid #d32f2f;
  box-shadow: 0 1px 0 0 #d32f2f;
 }
