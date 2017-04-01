@@ -1,27 +1,72 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>CYV</title>
 
-<html>
+  <!-- CSS  -->
+  <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <link href="/public/css/materialize-override.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/public/css/materialize-override-input-field.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/public/css/bar.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/public/css/input-field.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">CYV</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/signin">Sign In</a></li>
+        <li><a href="/login">Log In</a></li>
+      </ul>
 
-	<head>
-		<title>Clementine.js - The elegant and lightweight full stack JavaScript boilerplate.</title>
-		
-		<link href="/public/css/main.css" rel="stylesheet" type="text/css">
-	</head>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="/signin">Sign In</a></li>
+        <li><a href="/login">Log In</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <main>
+    <div class="section no-pad-bot" id="index-banner">
+      <div class="container">
+        <br><br>
+        <h1 class="header center orange-text">Log In</h1>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="input-field__text validate">
+            <label for="email" class="input-field__label">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="password" type="password" class="input-field__text validate">
+            <label for="password" class="input-field__label">Password</label>
+          </div>
+        </div>
+        <div class="center">
+          <a class="btn btn-large waves-effect waves-light light-blue lighten-1" style="padding: 0 3rem;" title="Sign In"><i class="material-icons">done</i></a>
+        </div>
+        <!--<a class="btn btn-large waves-effect waves-light orange"><i class="material-icons left">add</i>Add Option</a>
+        <a class="btn btn-large waves-effect waves-light orange" style="float: right">Save</a>-->
+      </div>
+    </div>
+  </main>
 
-	<body>
-		<div class="container">	
-			<div class="login">
-				<img src="/public/img/clementine_150.png" />
-				<br />
-				<p class="clementine-text">Clementine.js</p>
-				<a href="/auth/github">
-					<div class="btn" id="login-btn">
-						<img src="/public/img/github_32px.png" alt="github logo" />
-						<p>LOGIN WITH GITHUB</p>
-					</div>
-				</a>
-			</div>
-		</div>
-	</body>
+  <footer class="page-footer orange">
+    <div class="footer-copyright">
+      <div class="container">
+        &copy; Made by <a class="orange-text text-lighten-3" href="https://github.com/Sufflavus">Sufflavus</a>
+      </div>
+    </div>
+  </footer>
 
+
+  <!--  Scripts-->
+  <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  <script src="/public/js/init.js"></script>
+
+  </body>
 </html>
