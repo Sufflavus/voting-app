@@ -56,9 +56,9 @@ module.exports = function (app, passport) {
 			res.redirect('/login');
 		});
 		
-	app.route('/signin')
+	app.route('/signun')
 		.get(function (req, res) {
-			res.sendFile(path + '/public/signin.html');
+			res.sendFile(path + '/public/signun.html');
 		});
 
 	app.route('/profile')
